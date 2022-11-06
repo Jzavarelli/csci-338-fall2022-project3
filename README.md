@@ -17,7 +17,7 @@ git push
 
 You can clone the repo openly due to the public nature of our repository, which means we do not want to source this GitHub to other members willingly.
 
-You pull a repo first to update every time, then can *git add .* to add every item from your repo branch. Finally, you can easily commit with a message, which should try to not have spaces, and then push to the main branch.
+You pull a repo first to update every time, then can *"git add ."* to add every item from your repo branch. Finally, you can easily commit with a message, which should try to not have spaces, and then push to the main branch.
 
 Expect error conflicts as it will occur when two branches merge to main.
 
