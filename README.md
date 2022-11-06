@@ -4,7 +4,7 @@ This is the upstream main repo for project 3 collaboration and work together wit
 The project will focus on working with graphs and building java scripts to code the graphs for specific functions.
 
 GitHub Code Setup & Repo Connection:
-'''
+```
 git clone https://github.com/Jzavarelli/csci-338-fall2022-project3.git
 
 git pull
@@ -13,17 +13,17 @@ git add .
 git commit -m "commit-message"
 git push
 
-'''
+```
 
- You can clone the repo openly due to the public nature of our repository, which means we do not want to source this GitHub to other members willingly.
+You can clone the repo openly due to the public nature of our repository, which means we do not want to source this GitHub to other members willingly.
 
- You pull a repo first to update every time, then can *git add .* to add every item from your repo branch. Finally, you can easily commit with a message, which should try to not have spaces, and then push to the main branch.
+You pull a repo first to update every time, then can *git add .* to add every item from your repo branch. Finally, you can easily commit with a message, which should try to not have spaces, and then push to the main branch.
 
 Expect error conflicts as it will occur when two branches merge to main.
 
 ## Project 3 Objectives
 
- Our project allows us to create four algoirthms that address NP-Complete problems from our lectures and homeworks. Building these would help us to understand the lectures and problems that we are solving. Each problem, in theory, is P = NP and if it is a P problem then it can be an NP-Complete Problem.
+Our project allows us to create four algoirthms that address NP-Complete problems from our lectures and homeworks. Building these would help us to understand the lectures and problems that we are solving. Each problem, in theory, is P = NP and if it is a P problem then it can be an NP-Complete Problem.
 
 1. exactVC - This algorithm is going to find the optimal vertex covers that exist in our graph. VertexCover is an algorithm, which is proven to be NP complete, and P complete. VertexCover shows us the *total allowed cover of Vertexes* within a graph (See Lectures from Week 11).
 2. inexactVC - This algorithm will find the least optimal vertex covers, but will run in polynomial time. *Non-trivial solutions* are the only possible route we can take.
