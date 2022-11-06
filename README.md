@@ -10,10 +10,10 @@ git clone https://github.com/Jzavarelli/csci-338-fall2022-project3.git
 git pull
 
 git add . 
-git commit -m "commit-message"
+git commit -m "update-#.##-name-commit"
 git push
-
 ```
+>Please try your best to keep to the format in the commit message. --> "update-#.##-name-commit" --> You will change the number to the newest number of update in the project. If the last commit from someone is 0.15, then you can make 0.20 for your update version. Then add your name in place of 'name' so we know who has pushed each update. This tedious format will prevent any issues when pushing to the repo and will optimize our bugfixing.
 
 You can clone the repo openly due to the public nature of our repository, which means we do not want to source this GitHub to other members willingly.
 
