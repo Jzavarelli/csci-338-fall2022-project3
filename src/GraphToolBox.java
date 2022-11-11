@@ -20,7 +20,11 @@ public class GraphToolBox
     // i.e. we will make sure that every edge in E has an end point in the complement of Vertices.
     public static int[] exactVC(Graph inputGraph) 
     {
-        int[] vertexArray = {};
+        int[][] exactGraph = inputGraph;
+
+        int[] vertexArray;
+
+
 
         return vertexArray;
     }
@@ -43,7 +47,11 @@ public class GraphToolBox
     //
     public static int[] inexactVC(Graph inputGraph) 
     {
-        int[] vertexPolyArray = {};
+        int[][] inexactGraph = inputGraph;
+
+        int[] vertexPolyArray;
+
+
 
         return vertexPolyArray;
     }
@@ -59,7 +67,11 @@ public class GraphToolBox
     // We will determine an independent set, vertice, by taking the complement of our Vertices and seeing if any are adjacent.
     public static int[] optimalIS(Graph inputGraph) 
     {
-        int[] isoVertexArr = {};
+        int[][] optimalGraph = inputGraph;
+
+        int[] isoVertexArr;
+
+
 
         return isoVertexArr;
     }
@@ -82,7 +94,11 @@ public class GraphToolBox
     //
     public static int[] inexactIS(Graph inputGraph)
     {
-        int[] isoVertexPolyArr = {};
+        int[][] inexactGraph = inputGraph;
+
+        int[] isoVertexPolyArr;
+
+        
 
         return isoVertexPolyArr;
     }
