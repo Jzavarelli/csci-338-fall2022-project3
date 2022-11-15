@@ -21,9 +21,18 @@ public class GraphToolBox
     public static int[] exactVC(Graph inputGraph) 
     {
         int[][] exactGraph = inputGraph.getGraph();
+        int i = 1;
 
-        int[] vertexArray;
+        int[] vertexArray = new int[exactGraph.length];
+        vertexArray[0] = exactGraph[0];
 
+        do 
+        {
+            
+
+            i++;
+        } 
+        while(vertexArray.length > i);
 
 
         return vertexArray;
@@ -51,7 +60,7 @@ public class GraphToolBox
         int[][] inexactGraph = inputGraph.getGraph();
         int verticeNum = inexactGraph.length;
 
-        int[] vertexPolyArray;
+        int[] vertexPolyArray = new int[verticeNum];
 
         try
         {
@@ -60,9 +69,13 @@ public class GraphToolBox
             {
                 for (int j = 0; j < inexactGraph[i].length; j++)
                 {
-                    
-
-
+                    if(inexactGraph[i] != vertexPolyArray[i])
+                    {
+                        if(inexactGraph[i][j] != vertexPolyArray[i])
+                        {
+                            vertexPolyArray[i] = inexactGraph[i];
+                        }
+                    }
                 }
             }
 
@@ -89,7 +102,7 @@ public class GraphToolBox
     {
         int[][] optimalGraph = inputGraph.getGraph();
 
-        int[] isoVertexArr;
+        int[] isoVertexArr = new int[optimalGraph.length];
 
 
 
@@ -117,7 +130,7 @@ public class GraphToolBox
         int[][] inexactGraph = inputGraph.getGraph();
         int verticeNum = inexactGraph.length;
 
-        int[] isoVertexPolyArr;
+        int[] isoVertexPolyArr = new int[verticeNum];
 
         try
         {
