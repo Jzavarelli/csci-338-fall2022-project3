@@ -20,7 +20,7 @@ public class GraphToolBox
     // i.e. we will make sure that every edge in E has an end point in the complement of Vertices.
     public static int[] exactVC(Graph inputGraph) 
     {
-        int[][] exactGraph = inputGraph;
+        int[][] exactGraph = inputGraph.getGraph();
 
         int[] vertexArray;
 
@@ -47,19 +47,33 @@ public class GraphToolBox
     //
     public static int[] inexactVC(Graph inputGraph) 
     {
-        int[][] inexactGraph = inputGraph;
+        // [V] [a,b]
+        int[][] inexactGraph = inputGraph.getGraph();
+        int verticeNum = inexactGraph.length;
 
         int[] vertexPolyArray;
 
-        for (int i = 0; i < inexactGraph.length; i++)
+        try
         {
-            for (int j = 0; j < inexactGraph[i].length; j++)
+            // O(n^2)
+            for (int i = 0; i < verticeNum; i++)
             {
+                for (int j = 0; j < inexactGraph[i].length; j++)
+                {
+                    
 
+
+                }
             }
+
+        }
+        catch (Exception err)
+        {
+            System.out.println("Exception: " + err);
         }
 
         return vertexPolyArray;
+
     }
 
     
@@ -73,7 +87,7 @@ public class GraphToolBox
     // We will determine an independent set, vertice, by taking the complement of our Vertices and seeing if any are adjacent.
     public static int[] optimalIS(Graph inputGraph) 
     {
-        int[][] optimalGraph = inputGraph;
+        int[][] optimalGraph = inputGraph.getGraph();
 
         int[] isoVertexArr;
 
@@ -100,16 +114,28 @@ public class GraphToolBox
     //
     public static int[] inexactIS(Graph inputGraph)
     {
-        int[][] inexactGraph = inputGraph;
+        int[][] inexactGraph = inputGraph.getGraph();
+        int verticeNum = inexactGraph.length;
 
         int[] isoVertexPolyArr;
 
-        for (int i = 0; i < inexactGraph.length; i++)
+        try
         {
-            for (int j = 0; j < inexactGraph[i].length; j++)
+            // O(n^2)
+            for (int i = 0; i < verticeNum; i++)
             {
+                for (int j = 0; j < inexactGraph[i].length; j++)
+                {
+                    
 
+
+                }
             }
+
+        }
+        catch (Exception err)
+        {
+            System.out.println("Exception: " + err);
         }
 
         return isoVertexPolyArr;
