@@ -51,7 +51,13 @@ public class GraphToolBox
 
         int[] vertexPolyArray;
 
+        for (int i = 0; i < inexactGraph.length; i++)
+        {
+            for (int j = 0; j < inexactGraph[i].length; j++)
+            {
 
+            }
+        }
 
         return vertexPolyArray;
     }
@@ -98,7 +104,13 @@ public class GraphToolBox
 
         int[] isoVertexPolyArr;
 
-        
+        for (int i = 0; i < inexactGraph.length; i++)
+        {
+            for (int j = 0; j < inexactGraph[i].length; j++)
+            {
+
+            }
+        }
 
         return isoVertexPolyArr;
     }
